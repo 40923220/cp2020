@@ -133,15 +133,16 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">about << <a href='about.html'>Previous</a> <a href='unit3Hardware Components.html'>Next</a> >> unit3Hardware Components<br /><h1>成功的PC硬件</h1>
-<p><img alt="" height="252" src="https://40923243.github.io/cp2020/images/pc-assembly.jpg" width="315"/></p>
-<p id="N10654" lang=""><span><span>PC Hardware是一門在線課程，其中的內容將以文本和活動的形式呈現。</span></span></p>
-<p id="N10657" lang=""><span><span>與傳統課程相比，您將擁有更多的靈活性，但是您也將對自己的學習承擔更多責任。</span><span>您將需要：</span></span></p>
-<ul lang="">
-<li lang=""><span><span>計劃如何遍歷每個單元。</span></span></li>
-<li lang=""><span><span>確定如何使用課程的各種功能來幫助您學習。</span></span></li>
-<li lang=""><span><span>確定何時需要尋求其他支持。 </span></span><span><span></span></span><span><span></span></span> <br/> <br/>
-<br />about << <a href='about.html'>Previous</a> <a href='unit3Hardware Components.html'>Next</a> >> unit3Hardware Components</div>
+    <div id="tipue_search_content">Memory Module Width << <a href='Memory Module Width.html'>Previous</a> <a href='奇偶校驗和ECC.html'>Next</a> >> 奇偶校驗和ECC<br /><h1>Parity and ECC</h1>
+<p id="N106A9" lang="">Parity is used to perform basic error checking and to ensure the memory contents are reliable. This memory is slower than non-parity, but adds the reliability needed for servers and certain desktop workstations.</p>
+<p id="N106AC" lang="">Parity checking is a rather simple method of detecting memory errors, without any correction capabilities. Parity is signified in a single bit of data that is added to the transmitted data string. If the module normally would have seven bits of data, an eighth is added as the parity bit. If the module normally would have eight chips for data, a ninth chip is added for parity.</p>
+<p id="N106AF" lang="">Every byte has a parity bit associated with it. In the case that seven bits make up the original data, there are eight total bits transmitted (seven original data bits plus one parity bit). In the case that eight bits make up the original data, a total of nine bits are transmitted (eight data bits plus one parity bit). The parity bit is set at write time, and then calculated and compared at read time to determine if any of the bits have changed since the data was stored. This type of checking is limited to detection of single bit errors. If two bits have been altered, the parity check will “pass,” and the error is allowed to possibly corrupt the data.</p>
+<p id="N106B2" lang="">Parity checking can be implemented either as “0” parity or “1” parity. When the byte is stored, the number of zeros (or ones, if “1” parity is selected) is added up. The result is stored in the parity bit – “1” if odd, “0” if even. When that byte is read from memory, the bits are again counted and the result is compared against what was stored in the parity bit. A match means that the data was not changed from when it was stored (or that two bits were altered in such a way that the result is the same).</p>
+<p id="N106B5" lang="">The process to determine the parity bit is the same, regardless of the number of original data bits transmitted. Typically, there are either seven or eight bits of original data.</p>
+<p id="N106B8" lang="">The parity bit is determined by counting the number of “1” bits in a data string.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> 翻譯:<span>內存模塊寬度 內存模塊的寬度由可傳輸的位數決定。內存最初以8位形式出現，<br/>但在當前系統中已增加到16位，32位和現在的64位。必須以存儲體的形式添加內存，<br/>以確保其寬度等於內存總線的寬度。例如，如果您需要64位，而單個模塊提供64位，<br/>則庫中將只有一個模塊。如前所述，雙通道內存需要兩倍的存儲量，<br/>因此存儲庫中需要兩個64位（128位）DIMM，而三通道則需要三個。<br/></span></span></pre>
+<br />Memory Module Width << <a href='Memory Module Width.html'>Previous</a> <a href='奇偶校驗和ECC.html'>Next</a> >> 奇偶校驗和ECC</div>
         
     <!-- footer -->
       <div class="container">
