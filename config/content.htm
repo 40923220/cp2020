@@ -99,10 +99,106 @@ Rambus直接RAM（RDRAM）也被稱為RIMM（Rambus嵌入式存儲模塊）。�
 <p id="N106B2" lang=""><span><span>奇偶校驗可以實現為“ 0”奇偶校驗或“ 1”奇偶校驗。</span><span>存儲字節時，將加零（如果選擇了“ 1”奇偶校驗，則為零）的數目。</span><span>結果存儲在奇偶校驗位中-如果為奇數，則為“ 1”；如果為偶數，則為“ 0”。</span><span>當從內存中讀取該字節時，將再次對這些位進行計數，並將結果與奇偶校驗位中存儲的結果進行比較。</span><span>匹配表示數據從存儲時起就沒有改變（或以結果相同的方式更改了兩位）。</span></span></p>
 <p id="N106B5" lang=""><span><span>不管發送的原始數據位數如何，確定奇偶校驗位的過程都是相同的。</span><span>通常，原始數據有七位或八位。</span></span></p>
 <p id="N106B8" lang=""><span><span>奇偶校驗位是通過對數據字符串中“ 1”位的數量進行計數來確定的。</span></span></p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span> </span></span></pre>
+<p lang=""><span><span></span></span></p>
+<h2>PCH 6 Installing MemoryModules(安裝內存模塊)</h2>
+<p><span><span>Installing memory is a common computer upgrade and a very easy task to perform. Memory modules are installed as “sticks” (or modules) of memory into the “slots” on the motherboard.</span></span></p>
+<p><span><span><img alt="Photograph of memory modules or “sticks.”" class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image8.png" title="Photograph of memory modules or “sticks.”"/></span></span></p>
+<p id="N10698" lang=""></p>
+<p id="N10698" lang="">The process of installing memory sticks is fairly easy, but caution and precision are necessary. To install memory sticks (or modules):</p>
+<ol lang="">
+<li lang="">Always ensure you take proper ESD (electrostatic discharge) protection measures to ensure both the motherboard and memory modules are not harmed during installation.</li>
+<li lang="">Turn off the computer and unplug the power cord.</li>
+<li lang="">Open the case and begin the installation of the memory sticks. Always hold the memory sticks by the sides of the chips and never by the gold contacts.</li>
+<li lang="">Line up the memory module’s connector with the slot on the motherboard.</li>
+<li lang="">Verify that the locking tabs are in the open position.</li>
+<li lang="">Push the module straight down until the tabs swivel to the locking position (this takes force).</li>
+</ol>
+<p id="N106B0" lang="">Important note: Never touch the gold connectors on the modules! Corrosion of the contacts can occur, or the module may be damaged due to electrostatic discharge.</p>
+<p id="N106B3" lang="">To explore more about how to install RAM, visit<span> </span><a href="http://www.wikihow.com/Install-RAM" id="_i_2" lang="" target="_blank">www.wikihow.com/Install-RAM</a>.</p>
+<p lang=""><span>安裝內存是計算機的常見升級，並且是很容易執行的任務。</span><span>內存模塊作為內存的“棒”（或模塊）安裝在主板上的“插槽”中。</span></p>
+<p id="N10698" lang=""><span>安裝記憶棒的過程相當容易，但是必須謹慎且精確。要安裝記憶棒（或模塊）：</span></p>
+<ol lang="">
+<li lang=""><span><span>始終確保採取適當的ESD（靜電釋放）保護措施，以確保在安裝過程中不會損壞主板和內存模塊。</span></span></li>
+<li lang=""><span><span>關閉計算機電源，然後拔下電源線。</span></span></li>
+<li lang=""><span><span>打開外殼，開始安裝記憶棒。</span><span>始終將記憶棒放在芯片的側面，而不要緊握金觸點。</span></span></li>
+<li lang=""><span><span>將內存模塊的連接器與主板上的插槽對齊。</span></span></li>
+<li lang=""><span><span>確認鎖定卡舌處於打開位置。</span></span></li>
+<li lang=""><span><span>垂直向下推動模塊，直到卡舌旋轉到鎖定位置（需要用力）。</span></span></li>
+</ol>
+<p id="N106B0" lang=""><span><span>重要說明：切勿觸摸模塊上的金色連接器！</span><span>觸點可能會腐蝕，或者由於靜電放電會損壞模塊。</span></span></p>
+<p id="N106B3" lang=""><span><span>要了解有關如何安裝RAM的更多信息，請訪問</span></span><a href="http://www.wikihow.com/Install-RAM" id="_i_2" lang="" target="_blank"><span><span>www.wikihow.com/Install-RAM</span></span></a><span><span>。</span></span></p>
+<p lang=""><span><span></span></span></p>
+<br/><span><span>PCH 6 Introduction to BIOS CMOSand Firmware(</span></span><span lang="zh-TW">BIOS CMOS和固件簡介</span><span><span>)</span></span>
+<p><span><span>When a computer is turned on, the computer’s microprocessor uses a program called the <em class="bold" lang="">BIOS</em><span><span> </span>(basic input/output system) to start the computer system. The BIOS also manages data flow between the computer's operating system and attached/connected devices, such as the hard drive, video adapter, keyboard, mouse, and printer.</span></span></span></p>
+<p><span><span><span><img alt="Photograph of a basic input/output system    (BIOS) chip." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image9.png" title="Photograph of a basic input/output system    (BIOS) chip."/></span></span></span></p>
+<p id="N1068E" lang="">A computer’s BIOS is the most common example of<span> </span><span class="term" lang="">firmware</span>. Firmware is software on a chip, and is the first software run by the computer when the machine is booted up. The BIOS has several roles, including performing the power-on self-test, which tests and initializes the processor, video card, disk drives, and adapters. The BIOS also includes the low-level “operating system” for the computer, which allows the computer to take input from and give output to the most basic components, including the keyboard, mouse, and disk drives. The BIOS is stored in a ROM (Read-only memory) chip, but can be upgraded through a process call “flashing.”</p>
+<p lang="">While the BIOS is a program that allows the user to make changes to the settings, the settings themselves are stored in the complementary metal-oxide semiconductor, or<span> </span><span class="term" lang="">CMOS</span>. The CMOS is a battery-powered memory chip.</p>
+<p lang="">Understanding BIOS and CMOS</p>
+<div class="section" id="N1069A">
+<div class="sectionContain">
+<p id="N106A1" lang="">The BIOS is used to configure common settings, such as the order in which devices are read by the computer. This order is known as the boot order. In addition, the BIOS is also used in the configuration of settings that turn on and off various input/output ports, and the configuration of various CPU settings such as<a aria-describedby="N106A5" class="extra" id=""></a>virtualization<span> </span>and<span> </span><a aria-describedby="N106AE" class="extra" id=""></a>overclocking<span> </span>.</p>
+<p id="N106B6" lang="">Be very careful when making changes to the BIOS. Incorrect settings may keep your computer from booting.</p>
+<span class="imagewrap"><span class="image"><img alt="Photograph of a basic       input/output system (BIOS) setup utility." class="popimg" id="_i_2" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image10.png" title="Photograph of a basic       input/output system (BIOS) setup utility."/></span></span></div>
+<div class="sectionContain">
+<p id="N106C8" lang="">BIOS configures the following settings:</p>
+<ul lang="">
+<li lang="">Boot order</li>
+<li lang="">Storage devices (USB drives, hard drives, floppy drives, optical drives)</li>
+<li lang="">Built-in ports (SATA, eSATA, PATA, USB, IEEE-1394, serial, parallel, PS/2)</li>
+<li lang="">AGP, PCI, PCIe slots</li>
+<li lang="">Integrated chipsets (audio, video, network)</li>
+<li lang="">Virtualization</li>
+<li lang="">Clock speed</li>
+<li lang="">Memory (RAM)</li>
+<li lang="">Power management</li>
+<li lang="">Intrusion detection</li>
+<li lang="">Passwords and encryption</li>
+<li lang="">PC health tools (temperature, voltage, etc.)</li>
+<li lang="">Direct access to the web or other services without booting computer (UEFI specific)</li>
+</ul>
+<p id="N106F5" lang="">When the power button is pressed on the computer, the first step in the boot process is the power-on self-test, called the<span> </span><span class="term" lang="">POST</span>. Once a successful POST occurs, the BIOS reads the settings from the CMOS, and the BIOS looks for an operating system from the configured boot devices. Once it finds the operating system, the operating system’s boot loader begins the operating system boot process, and turns over control of the computer to the operating system.</p>
+<div class="image shouldbeleft"><img alt="Graphic depiction of the boot      process starting with BIOS, moving to OS loader code and ending with OS      start." class="popimg" id="_i_4" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image11.png" title="Graphic depiction of the boot      process starting with BIOS, moving to OS loader code and ending with OS      start."/></div>
+<p id="N10700" lang="">The boot process:</p>
+<ol lang="">
+<li lang="">Power on computer.</li>
+<li lang="">BIOS performs power-on self-test (POST).</li>
+<li lang="">BIOS reads settings from CMOS.</li>
+<li lang="">BIOS looks for operating system from configured boot device.</li>
+</ol>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span> 翻譯:</span></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">開啟計算機後，計算機的微處理器會使用稱為BIOS（基本輸入/輸出系統）的程序來啟動計算機系統。 BIOS還管理計算機操作系統和已連接/已連接的設備（例如硬盤驅動器，視頻適配器，鍵盤，鼠標和打印機）之間的數據流。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">計算機的BIOS是最常見的固件示例。固件是芯片上的軟件，是計算機啟動時計算機運行的第一個軟件。 BIOS具有多個角色，包括執行開機自檢，以測試和初始化處理器，視頻卡，磁盤驅動器和適配器。 BIOS還包括用於計算機的低級“操作系統”，它使計算機可以從最基本的組件（包括鍵盤，鼠標和磁盤驅動器）獲取輸入並提供輸出。 BIOS存儲在ROM（只讀存儲器）芯片中，但可以通過過程調用“刷新”進行升級。
+
+BIOS是允許用戶更改設置的程序，而設置本身則存儲在互補金屬氧化物半導體或CMOS中。 CMOS是電池供電的存儲芯片。
+
+了解BIOS和CMOS
+BIOS用於配置通用設置，例如計算機讀取設備的順序。此命令稱為引導命令。此外，BIOS還用於配置打開和關閉各種輸入/輸出端口的設置，以及各種CPU設置（例如虛擬化和超頻）的配置。
+
+更改BIOS時要非常小心。設置不正確可能會導致計算機無法啟動。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">BIOS配置以下設置：
+
+引導順序
+存儲設備（USB驅動器，硬盤驅動器，軟盤驅動器，光盤驅動器）
+內置端口（SATA，eSATA，PATA，USB，IEEE-1394，串行，並行，PS / 2）
+AGP，PCI，PCIe插槽
+集成芯片組（音頻，視頻，網絡）
+虛擬化
+時鐘速度
+記憶體（RAM）
+能源管理
+入侵檢測
+密碼和加密
+PC健康工具（溫度，電壓等）
+直接訪問Web或其他服務，而無需啟動計算機（特定於UEFI）
+當按下計算機上的電源按鈕時，引導過程的第一步是開機自檢，稱為POST。成功進行POST後，BIOS將從CMOS中讀取設置，然後BIOS從已配置的引導設備中尋找操作系統。找到操作系統後，操作系統的引導加載程序將開始進行操作系統引導過程，並將計算機的控制權移交給操作系統。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">引導過程：
+
+打開計算機電源。
+BIOS執行開機自檢（POST）。
+BIOS從CMOS讀取設置。
+BIOS從配置的引導設備中查找操作系統。</span></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span> </span></span></pre>
 <p></p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"></pre>
-<div id="gtx-trans" style="position: absolute; left: -14px; top: 1147.17px;">
-<div class="gtx-trans-icon"></div>
-</div></li></ul>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"></pre></li></ul>
