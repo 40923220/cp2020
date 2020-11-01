@@ -200,7 +200,7 @@ PC健康工具（溫度，電壓等）
 <p><span lang="zh-TW"><span> CMOS（互補金屬氧化物半導體）是電池供電的存儲芯片。它是非易失性存儲器，用於存儲BIOS設置，<br/>並內置在主板中。只要電池電量剩餘，就會向CMOS提供DC（直流電）並保留設置。<br/>如果計算機不斷丟失設置，則需要更換電池。<br/>較舊的CMOS電池型號使用DS12887A電池或AA尺寸的3.6伏Eternacell電池，通常可以使用大約三年。<br/>較新的CMOS型號包括內置鋰離子電池，該電池可使用長達10年。<br/>當前使用的最典型的外部電池是CR2032，它類似於標準的手錶電池。<br/>當電池開始出現故障時，向用戶顯示的第一個信號是系統時鐘經常浪費時間。<br/> CMOS內存和電池的照片。</span></span></p>
 <p><span lang="zh-TW"><span></span></span></p>
 <p><span lang="zh-TW"><span></span></span></p>
-<br/><span lang="zh-TW"><span><br/></span></span><span lang="zh-TW"><span>PCH 6 Configuring the System BIOS(配置系統BIOS)<br/></span></span>
+<p><br/><span lang="zh-TW"><span><br/></span></span><span lang="zh-TW"><span>PCH 6 Configuring the System BIOS(配置系統BIOS)<br/></span></span></p>
 <p id="N10678" lang="">To change the settings in the CMOS, the user needs to enter the BIOS. To do this, the user must press a valid key or key combination during the boot process as set by the computer manufacturer. The most common keys used to enter the BIOS are F2 and/or Delete. Typically, the keystroke required to enter the BIOS is displayed on the monitor during the boot process. If the keystroke isn’t displayed, a quick search of the manufacturer’s website will often tell the user the required keystroke to enter the BIOS.</p>
 <p><span lang="zh-TW"><span><span class="imagewrap"><span class="image"><img alt="Photograph of a boot screen, which    displays the required keystroke to enter the BIOS." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image13.png" title="Photograph of a boot screen, which    displays the required keystroke to enter the BIOS."/></span><span class="caption" lang="">A boot screen, which displays the required keystroke to enter the BIOS. Photo used under CC-BY-SA license from<span> </span><a href="https://flic.kr/p/ES7Z6" id="_i_1" lang="" target="_blank">Chip Poutine</a>.</span></span></span></span></p>
 <p id="N1068A" lang="">The BIOS interface and the keystrokes to enter the BIOS change depending on the BIOS manufacturer. Below are images of the BIOS interface from two different manufacturers. Notice that while the information available is consistent between the two, the interface is slightly different.</p>
@@ -233,9 +233,81 @@ PC健康工具（溫度，電壓等）
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">要更改CMOS中的設置，用戶需要進入BIOS。為此，用戶必須在計算機製造商設置的引導過程中按下有效的鍵或組合鍵。用於進入BIOS的最常用鍵是F2和/或Delete。通常，在引導過程中，進入BIOS所需的擊鍵將顯示在監視器上。如果未顯示擊鍵，則快速搜索製造商的網站通常會告訴用戶輸入BIOS所需的擊鍵。</span></pre>
 <p><span>BIOS界面和用於進入BIOS的擊鍵取決於BIOS製造商。下面是來自兩個不同製造商的BIOS接口的圖像。請注意，儘管兩者之間的可用信息是一致的，但界面略有不同。</span></p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">統一可擴展固件接口（UEFI）
-傳統上，只有一種類型的BIOS，它完全依賴於基於文本的菜單和用於輸入的鍵盤。最近，大多數BIOS製造商已切換到統一的可擴展固件接口或UEFI。此更新的BIOS允許鍵盤和鼠標輸入，並提供GUI而不是標準的基於文本的菜單。支持GUID分區表（GPT），允許訪問最大2 TB的磁盤，並向後兼容舊分區結構（例如主啟動記錄（MBR）和Linux的GRand Unified Bootloader（GRUB）；從可移動媒體啟動；用戶界面）允許在線連接以進行Web訪問，診斷和文件管理；以及安全啟動（Secure Boot），可防止操作系統前代碼被修改；其中某些UEFI BIOS還包括允許用戶上網，玩基本遊戲和使用的軟件。無需進入正常操作系統即可備份程序。</span></pre>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">自動配置是某些BIOS的功能。儘管自動BIOS配置並非總能創建最佳設置，但是如果發生重大錯誤以將安全回滾創建到已知的良好狀態，它可能會非常有用。自動配置選項包括BIOS默認設置（原始/故障安全設置）和設置默認設置（最佳設置）。通常有一個turbo設置，可以快速配置以實現更快的系統。在對系統進行故障排除時，BIOS的自動配置通常很有用。</span></pre>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"></pre>
-<div id="gtx-trans" style="position: absolute; left: -9px; top: 2270.92px;">
-<div class="gtx-trans-icon"></div>
-</div></li></ul>
+傳統上，只有一種類型的BIOS，它完全依賴於基於文本的菜單和用於輸入的鍵盤。最近，大多數BIOS製造商已切換到統一的可擴展固件接口或UEFI。此更新的BIOS允許鍵盤和鼠標輸入，並提供GUI而不是標準的基於文本的菜單。支持GUID分區表（GPT），允許訪問最大2 TB的磁盤，並向後兼容舊分區結構（例如主啟動記錄（MBR）和Linux的GRand Unified Bootloader（GRUB）；從可移動媒體啟動；用戶界面）允許在線連接以進行Web訪問，診斷和文件管理；以及安全啟動（Secure Boot），可防止操作系統前代碼被修改；其中某些UEFI BIOS還包括允許用戶上網，玩基本遊戲和使用的軟件。無需進入正常操作系統即可備份程序。<br/><br/></span></pre>
+<p><span lang="zh-TW">自動配置是某些BIOS的功能。儘管自動BIOS配置並非總能創建最佳設置，但是如果發生重大錯誤以將安全回滾創建到已知的良好狀態，它可能會非常有用。自動配置選項包括BIOS默認設置（原始/故障安全設置）和設置默認設置（最佳設置）。通常有一個turbo設置，可以快速配置以實現更快的系統。在對系統進行故障排除時，BIOS的自動配置通常很有用。<br/><br/><br/></span></p>
+<h2 class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">PCH 6 PowerOn SelfTest (POST) and Error Reporting<br/></span></h2>
+<p><span lang="zh-TW"><span>PCH 6開機自檢（POST）和錯誤報告</span></span></p>
+<p id="N106A0" lang="">When power is turned on, the POST (power-on self-test) is the diagnostic testing sequence that a computer's basic input/output system (or "starting program") runs to determine if the computer keyboard, random access memory, disk drives, and other hardware are working correctly. The POST is the initial test performed by the BIOS upon booting. The role of the POST is to find errors in hardware, and report those errors. The POST checks the following:</p>
+<ul lang="">
+<li lang="">CPU and parts of BIOS</li>
+<li lang="">System time</li>
+<li lang="">Video display card</li>
+<li lang="">Memory</li>
+<li lang="">Keyboard</li>
+<li lang="">Disk drives</li>
+</ul>
+<p id="N106B8" lang="">If the necessary hardware is detected and found to be operating properly, the computer begins to boot. If the hardware is not detected or is found not to be operating properly, the BIOS issues an error message. This error message may be text on the display screen and/or a series of coded beeps, depending on the nature of the problem. Since the POST runs before the computer's video card is activated, it may not be possible to progress to the display screen. The pattern of beeps may be a variable number of short beeps or a mixture of long and short beeps, depending on what type of BIOS is installed. The pattern of beeps contains messages about the nature of the problem detected. For example, if the keyboard is not detected, a particular pattern of beeps will inform you of that fact. An error found in the POST is usually fatal (that is, it causes the current program to stop running) and will halt the boot process, since the hardware checked is absolutely essential for the computer's functions.</p>
+<p lang="">The pattern of beeps is like Morse code. The number and sequence of beeps has a meaning set by the computer manufacturer. Therefore, the meaning of each beep differs by manufacturer. A chart that includes some AMI and Dell beep codes is shown below.</p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<thead>
+<tr>
+<th align="center" lang=""><em lang="">BEEP CODE</em></th>
+<th align="center" lang=""><em lang="">AMI</em></th>
+<th align="center" lang=""><em lang="">DELL</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" lang="">1</td>
+<td lang="">DRAM refresh failure</td>
+<td lang="">BIOS ROM corruption or failure</td>
+</tr>
+<tr class="e">
+<td align="center" lang="">2</td>
+<td lang="">Parity circuit failure</td>
+<td lang="">RAM not detected</td>
+</tr>
+<tr>
+<td align="center" lang="">3</td>
+<td lang="">Base 64K RAM failure</td>
+<td lang="">Motherboard failure</td>
+</tr>
+<tr class="e">
+<td align="center" lang="">4</td>
+<td lang="">System timer failure</td>
+<td lang="">RAM failure</td>
+</tr>
+<tr>
+<td align="center" lang="">5</td>
+<td lang="">Process failure</td>
+<td lang="">CMOS battery failure</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>Beep Codes</p>
+<div>
+<p id="N1071E" lang="">Here is a sample beep code from a computer having a problem:</p>
+<div class="actContain">
+<div class="activity audio"><span class="audio" rcolor=""><audio controls="controls" data-mce-fragment="1" id="_i_0" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/beep_code2.mp3" type="audio/mpeg"></audio></span></div>
+</div>
+<p id="N10727" lang="">This beep code consists of two short beeps. What does this POST beep sequence mean? It depends on the BIOS’s manufacturer.</p>
+<p id="N1072A" lang="">Use a search engine to search for "AMI beep codes."<span> </span><a href="http://www.bioscentral.com/beepcodes/amibeep.htm" id="_i_1" lang="" target="_blank">This might be a typical result.</a><span> </span>This website tells us that on an AMI computer, two short beeps indicate a memory parity error.</p>
+<p id="N10733" lang="">Now search for "AST Research BIOS beep codes."<span> </span><a href="http://www.bioscentral.com/beepcodes/astbeep.htm" id="_i_2" lang="" target="_blank">Here is a typical result.</a><span> </span>This website tells us that on an AST Research BIOS computer, two short beeps indicate a keyboard controller buffer failure.</p>
+<p id="N1073C" lang="">An Internet search for "IBM bios beep codes" would indicate that this beep code indicates a POST error, and that you should review the screen for the error code.</p>
+<p id="N1073F" lang="">Knowing the BIOS manufacturer is important when diagnosing a problem during the POST, as the meaning of the beep codes vary by manufacturer.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">開機時，POST（開機自檢）是計算機基本輸入/輸出系統（或“啟動程序”）運行以確定計算機鍵盤，隨機存取存儲器，磁盤驅動器的診斷測試順序。 ，並且其他硬件運行正常。 POST是BIOS在引導時執行的初始測試。 POST的作用是查找硬件錯誤，並報告這些錯誤。 POST檢查以下內容：
+
+CPU和部分BIOS
+系統時間
+視頻顯示卡
+記憶
+鍵盤
+磁盤驅動器
+如果檢測到必要的硬件並發現其運行正常，則計算機將開始啟動。如果未檢測到硬件或發現硬件運行不正常，BIOS將發出錯誤消息。根據問題的性質，此錯誤消息可能是顯示屏上的文本和/或一系列編碼的嗶聲。由於POST在激活計算機的視頻卡之前運行，因此可能無法進入顯示屏幕。嗶聲的模式可以是可變數目的短嗶聲，也可以是長短嗶聲的混合，具體取決於安裝的BIOS類型。嗶聲的模式包含有關所檢測問題性質的消息。例如，如果未檢測到鍵盤，則特定的嗶嗶聲將告知您該事實。 POST中發現的錯誤通常是致命的（也就是說，它導致當前程序停止運行），並且將終止引導過程，因為檢查的硬件對於計算機的功能絕對必要。
+
+嗶聲的模式類似於莫爾斯電碼。嗶聲的數量和順序由計算機製造商設定。因此，每個嗶嗶聲的含義因製造商而異。包含一些AMI和Dell嗶聲代碼的圖表如下所示。<br/><span>此蜂鳴聲代碼包含兩個短蜂鳴聲。這個POST嗶嗶聲序列是什麼意思？這取決於BIOS的製造商。 使用搜索引擎搜索“ AMI嗶聲代碼”。這可能是典型的結果。該網站告訴我們，在AMI計算機上，兩聲短促的嗶嗶聲表示內存奇偶校驗錯誤。 現在搜索“ AST Research BIOS嗶聲代碼”。這是一個典型的結果。該網站告訴我們，在AST Research BIOS計算機上，兩聲短促的嗶嗶聲表示鍵盤控制器緩衝區故障。 如果在Internet上搜索“ IBM bios嗶聲代碼”，則表明該嗶聲代碼指示POST錯誤，因此您應該在屏幕上查看錯誤代碼。 在POST期間診斷問題時，了解BIOS製造商很重要，因為嗶嗶代碼的含義因製造商而異。</span></span></pre>
+</div>
+<p></p>
+<p></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"></pre></li></ul>

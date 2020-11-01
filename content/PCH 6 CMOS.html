@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='about.html'>about</a><li><a href='成功的PC硬件.html'>成功的PC硬件</a><li class='has-children'><a href='unit3Hardware Components.html'>unit3Hardware Components</a><ul class='dropdown'><li><a href='PCH 6內存模塊（內存模塊）.html'>PCH 6內存模塊（內存模塊）</a><li><a href='PCH 6 History of RAM的歷史記錄.html'>PCH 6 History of RAM的歷史記錄</a><li><a href='PCH 6 Parity(奇偶校驗).html'>PCH 6 Parity(奇偶校驗)</a><li><a href='PCH 6 Installing MemoryModules(安裝內存模塊).html'>PCH 6 Installing MemoryModules(安裝內存模塊)</a><li><a href='PCH 6 CMOS.html'>PCH 6 CMOS</a></li>
+                     <li><a href='about.html'>about</a><li><a href='成功的PC硬件.html'>成功的PC硬件</a><li class='has-children'><a href='unit3Hardware Components.html'>unit3Hardware Components</a><ul class='dropdown'><li><a href='PCH 6內存模塊（內存模塊）.html'>PCH 6內存模塊（內存模塊）</a><li><a href='PCH 6 History of RAM的歷史記錄.html'>PCH 6 History of RAM的歷史記錄</a><li><a href='PCH 6 Parity(奇偶校驗).html'>PCH 6 Parity(奇偶校驗)</a><li><a href='PCH 6 Installing MemoryModules(安裝內存模塊).html'>PCH 6 Installing MemoryModules(安裝內存模塊)</a><li><a href='PCH 6 CMOS.html'>PCH 6 CMOS</a><li><a href='PCH 6 PowerOn SelfTest (POST) and Error Reporting.html'>PCH 6 PowerOn SelfTest (POST) and Error Reporting</a><li><a href='PCH 6 BIOS Updates(BIOS更新).html'>PCH 6 BIOS Updates(BIOS更新)</a></li>
                       </ul>
                 </nav>
               </div>
@@ -133,7 +133,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">PCH 6 Installing MemoryModules(安裝內存模塊) << <a href='PCH 6 Installing MemoryModules(安裝內存模塊).html'>Previous</a> <br /><h1>PCH 6 CMOS</h1>
+    <div id="tipue_search_content">PCH 6 Installing MemoryModules(安裝內存模塊) << <a href='PCH 6 Installing MemoryModules(安裝內存模塊).html'>Previous</a> <a href='PCH 6 PowerOn SelfTest (POST) and Error Reporting.html'>Next</a> >> PCH 6 PowerOn SelfTest (POST) and Error Reporting<br /><h1>PCH 6 CMOS</h1>
 <p id="N10688" lang="">The CMOS (complementary metal-oxide semiconductor) is a battery-powered memory chip. It is nonvolatile memory that stores the BIOS settings and is built into the motherboard. As long as battery power remains, DC (direct current) is provided to the CMOS and allows the settings to be retained. If the computer is constantly losing the settings, the battery will need to be replaced. Older CMOS battery models used the DS12887A battery or AA-sized 3.6 volt Eternacell battery, and normally lasted approximately three years. Newer CMOS models include an internal lithium-ion battery that can last for up to 10 years. The most typical current external battery used is the CR2032, which resembles a standard watch battery. When the battery begins to fail, the first sign to the user is that the system clock frequently loses time.</p>
 <p><span lang="zh-TW"><span class="imagewrap"><span class="image"><img alt="Photograph of the CMOS memory and    battery." class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image12.png" title="Photograph of the CMOS memory and    battery."/></span></span></span></p>
 <p><span lang="zh-TW"><span> CMOS（互補金屬氧化物半導體）是電池供電的存儲芯片。它是非易失性存儲器，用於存儲BIOS設置，<br/>並內置在主板中。只要電池電量剩餘，就會向CMOS提供DC（直流電）並保留設置。<br/>如果計算機不斷丟失設置，則需要更換電池。<br/>較舊的CMOS電池型號使用DS12887A電池或AA尺寸的3.6伏Eternacell電池，通常可以使用大約三年。<br/>較新的CMOS型號包括內置鋰離子電池，該電池可使用長達10年。<br/>當前使用的最典型的外部電池是CR2032，它類似於標準的手錶電池。<br/>當電池開始出現故障時，向用戶顯示的第一個信號是系統時鐘經常浪費時間。<br/> CMOS內存和電池的照片。</span></span></p>
@@ -173,11 +173,8 @@ img.add_border {
 <p><span>BIOS界面和用於進入BIOS的擊鍵取決於BIOS製造商。下面是來自兩個不同製造商的BIOS接口的圖像。請注意，儘管兩者之間的可用信息是一致的，但界面略有不同。</span></p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">統一可擴展固件接口（UEFI）
 傳統上，只有一種類型的BIOS，它完全依賴於基於文本的菜單和用於輸入的鍵盤。最近，大多數BIOS製造商已切換到統一的可擴展固件接口或UEFI。此更新的BIOS允許鍵盤和鼠標輸入，並提供GUI而不是標準的基於文本的菜單。支持GUID分區表（GPT），允許訪問最大2 TB的磁盤，並向後兼容舊分區結構（例如主啟動記錄（MBR）和Linux的GRand Unified Bootloader（GRUB）；從可移動媒體啟動；用戶界面）允許在線連接以進行Web訪問，診斷和文件管理；以及安全啟動（Secure Boot），可防止操作系統前代碼被修改；其中某些UEFI BIOS還包括允許用戶上網，玩基本遊戲和使用的軟件。無需進入正常操作系統即可備份程序。<br/><br/></span></pre>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">自動配置是某些BIOS的功能。儘管自動BIOS配置並非總能創建最佳設置，但是如果發生重大錯誤以將安全回滾創建到已知的良好狀態，它可能會非常有用。自動配置選項包括BIOS默認設置（原始/故障安全設置）和設置默認設置（最佳設置）。通常有一個turbo設置，可以快速配置以實現更快的系統。在對系統進行故障排除時，BIOS的自動配置通常很有用。</span></pre>
-<p></p>
-<p></p>
-<p></p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"></pre></li></ul><br />PCH 6 Installing MemoryModules(安裝內存模塊) << <a href='PCH 6 Installing MemoryModules(安裝內存模塊).html'>Previous</a> </div>
+<p><span lang="zh-TW">自動配置是某些BIOS的功能。儘管自動BIOS配置並非總能創建最佳設置，但是如果發生重大錯誤以將安全回滾創建到已知的良好狀態，它可能會非常有用。自動配置選項包括BIOS默認設置（原始/故障安全設置）和設置默認設置（最佳設置）。通常有一個turbo設置，可以快速配置以實現更快的系統。在對系統進行故障排除時，BIOS的自動配置通常很有用。<br/><br/><br/></span></p>
+<br />PCH 6 Installing MemoryModules(安裝內存模塊) << <a href='PCH 6 Installing MemoryModules(安裝內存模塊).html'>Previous</a> <a href='PCH 6 PowerOn SelfTest (POST) and Error Reporting.html'>Next</a> >> PCH 6 PowerOn SelfTest (POST) and Error Reporting</div>
         
     <!-- footer -->
       <div class="container">
