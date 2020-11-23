@@ -97,10 +97,9 @@ Rambus直接RAM（RDRAM）也被稱為RIMM（Rambus嵌入式存儲模塊）。�
 <p id="N106AC" lang=""><span><span>奇偶校驗是一種檢測內存錯誤的相當簡單的方法，沒有任何校正功能。</span><span>奇偶校驗在添加到傳輸數據字符串的單個數據位中表示。</span><span>如果模塊通常具有七個數據位，則將八分之一添加為奇偶校驗位。</span><span>如果模塊通常有八個芯片用於數據，則添加第九個芯片以實現奇偶校驗。</span></span></p>
 <p id="N106AF" lang=""><span><span>每個字節都有一個與之關聯的奇偶校驗位。</span><span>在七位組成原始數據的情況下，總共傳輸了八位（七位原始數據位加一個奇偶校驗位）。</span><span>在八位組成原始數據的情況下，總共傳輸九位（八位數據位加一位奇偶校驗位）。</span><span>奇偶校驗位在寫入時設置，然後在讀取時進行計算和比較，以確定自存儲數據以來是否有任何位發生了更改。</span><span>這種類型的檢查僅限於檢測單個位錯誤。</span><span>如果更改了兩位，則奇偶校驗將“通過”，並且允許該錯誤可能破壞數據。</span></span></p>
 <p id="N106B2" lang=""><span><span>奇偶校驗可以實現為“ 0”奇偶校驗或“ 1”奇偶校驗。</span><span>存儲字節時，將加零（如果選擇了“ 1”奇偶校驗，則為零）的數目。</span><span>結果存儲在奇偶校驗位中-如果為奇數，則為“ 1”；如果為偶數，則為“ 0”。</span><span>當從內存中讀取該字節時，將再次對這些位進行計數，並將結果與奇偶校驗位中存儲的結果進行比較。</span><span>匹配表示數據從存儲時起就沒有改變（或以結果相同的方式更改了兩位）。</span></span></p>
-<p id="N106B5" lang=""><span><span>不管發送的原始數據位數如何，確定奇偶校驗位的過程都是相同的。</span><span>通常，原始數據有七位或八位。</span></span></p>
+<p id="N106B5" lang=""><span><span>不管發送的原始數據位數如何，確定奇偶校驗位的過程都是相同的。</span><span>通常，數據有七位或八位。</span></span></p>
 <p id="N106B8" lang=""><span><span>奇偶校驗位是通過對數據字符串中“ 1”位的數量進行計數來確定的。</span></span></p>
-<p lang=""><span><span></span></span></p>
-<h2>PCH 6 Installing MemoryModules(安裝內存模塊)</h2>
+<p lang=""><span><span></span></span></p><h2>PCH 6 Installing MemoryModules(安裝內存模塊)</h2>
 <p><span><span>Installing memory is a common computer upgrade and a very easy task to perform. Memory modules are installed as “sticks” (or modules) of memory into the “slots” on the motherboard.</span></span></p>
 <p><span><span><img alt="Photograph of memory modules or “sticks.”" class="popimg" id="_i_0" onclick="loadImageFromPage(this);" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/image8.png" title="Photograph of memory modules or “sticks.”"/></span></span></p>
 <p id="N10698" lang=""></p>
