@@ -307,8 +307,46 @@ PC健康工具（溫度，電壓等）
 <h1>HW2</h1>
 <h2>變數 Variables</h2>
 <p>參考:<a href="https://books.trinket.io/pfe/02-variables.html">https://books.trinket.io/pfe/02-variables.html</a> </p>
-<p><span>練習 : <a href="https://www.kaggle.com/notebooks?sortBy=dateRun&amp;tab=profile">https://www.kaggle.com/notebooks?sortBy=dateRun&amp;tab=profile</a></span></p>
-<h2><span>條件式Conditional execution<br/></span></h2>
+<p><span>練習 : <a href="https://www.kaggle.com/notebooks?sortBy=dateRun&amp;tab=profile">https://www.kaggle.com/notebooks?sortBy=dateRun&amp;tab=profile</a>\</span></p>
+<p>A<span> </span><em>value</em><span> </span>is one of the basic things a program works with, like a letter or a number. The values we have seen so far are<span> </span><code>1</code>,<span> </span><code>2</code>, and "Hello, World!"</p>
+<p>These values belong to different<span> </span><em>types</em>:<span> </span><code>2</code><span> </span>is an integer, and "Hello, World!" is a<span> </span><em>string</em>, so called because it contains a "string" of letters. You (and the interpreter) can identify strings because they are enclosed in quotation marks.</p>
+<p></p>
+<p>The<span> </span><code>print</code><span> </span>statement also works for integers. We use the<span> </span><code>python</code><span> </span>command to start the interpreter.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">值是程序使用的基本內容之一，例如字母或數字。到目前為止，我們看到的值為1、2和“ Hello，World！”。
+
+這些值屬於不同的類型：2是整數，“ Hello，World！”是字符串，之所以稱為字符串是因為它包含字母的“字符串”。您（和解釋器）可以識別字符串，因為它們用引號引起來。
+
+print語句也適用於整數。我們使用python命令啟動解釋器。<br/></span></pre>
+<pre class="sourceCode python"><code class="sourceCode python">python
+<span style="color: #800080;">&gt;&gt;&gt;</span> <span class="dt" style="color: #008000;">print</span>(<span class="dv">4</span>)
+<span class="dv">4</span></code></pre>
+<p>If you are not sure what type a value has, the interpreter can tell you.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">如果您不確定值的類型，解釋器可以告訴您。<br/><span>One of the most powerful features of a programming language is the ability to manipulate </span><em>variables</em><span>. A variable is a name that refers to a value.</span><br/></span></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span>編程語言最強大的功能之一就是能夠操縱變量。變量是引用值的名稱。<br/></span></code></pre>
+<p>Programmers generally choose names for their variables that are meaningful and document what the variable is used for.</p>
+<p>Variable names can be arbitrarily long. They can contain both letters and numbers, but they cannot start with a number. It is legal to use uppercase letters, but it is a good idea to begin variable names with a lowercase letter (you'll see why later).</p>
+<p>The underscore character (<code>_</code>) can appear in a name. It is often used in names with multiple words, such as<span> </span><code>my_name</code><span> </span>or<span> </span><code>airspeed_of_unladen_swallow</code>. Variable names can start with an underscore character, but we generally avoid doing this unless we are writing library code for others to use.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">程序員通常會為其變量選擇有意義的名稱，並記錄該變量的用途。
+
+變量名可以任意長。它們可以包含字母和數字，但不能以數字開頭。使用大寫字母是合法的，但以小寫字母開頭的變量名是一個好主意（稍後您將看到原因）。<br/></span></pre>
+<p>A<span> </span><em>statement</em><span> </span>is a unit of code that the Python interpreter can execute. We have seen two kinds of statements: print being an expression statement and assignment.</p>
+<p></p>
+<p>When you type a statement in interactive mode, the interpreter executes it and displays the result, if there is one.</p>
+<p>A script usually contains a sequence of statements. If there is more than one statement, the results appear one at a time as the statements execute.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">語句是Python解釋器可以執行的代碼單位。我們已經看到了兩種語句：print是表達式語句和賦值。
+
+在交互模式下鍵入語句時，解釋器將執行該語句並顯示結果（如果有）。
+
+腳本通常包含一系列語句。如果有多個語句，則在執行這些語句時，結果一次出現一個。<br/></span></pre>
+<p><em>Operators</em><span> </span>are special symbols that represent computations like addition and multiplication. The values the operator is applied to are called<span> </span><em>operands</em>.</p>
+<p>The operators<span> </span><code>+</code>,<span> </span><code>-</code>,<span> </span><code>*</code>,<span> </span><code>/</code>, and<span> </span><code>**</code><span> </span>perform addition, subtraction, multiplication, division, and exponentiation,</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">運算符是特殊的符號，代表加法和乘法之類的計算。應用該運算符的值稱為操作數。
+
+運算符+，-，*，/和**執行加，減，乘，除和乘冪運算。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span></span><br/></code></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre><h2>條件式Conditional execution</h2>
 <p><span>參考:<a href="https://books.trinket.io/pfe/03-conditional.html">https://books.trinket.io/pfe/03-conditional.html</a><span> </span></span></p>
 <p><span>練習:<a href="https://www.kaggle.com/nfu40923220/cp2020conditional-execution">https://www.kaggle.com/nfu40923220/cp2020conditional-execution</a></span></p>
 <h1>HW3</h1>
