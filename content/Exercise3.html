@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='about.html'>about</a><li><a href='成功的PC硬件.html'>成功的PC硬件</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='unit3Hardware Components.html'>unit3Hardware Components</a><li><a href='PCH 6內存模塊（內存模塊）.html'>PCH 6內存模塊（內存模塊）</a><li><a href='PCH 6 History of RAM的歷史記錄.html'>PCH 6 History of RAM的歷史記錄</a><li><a href='PCH 6 Parity(奇偶校驗).html'>PCH 6 Parity(奇偶校驗)</a><li><a href='PCH 6 Installing MemoryModules(安裝內存模塊).html'>PCH 6 Installing MemoryModules(安裝內存模塊)</a><li><a href='PCH 6 CMOS.html'>PCH 6 CMOS</a><li><a href='PCH 6 PowerOn SelfTest (POST) and Error Reporting.html'>PCH 6 PowerOn SelfTest (POST) and Error Reporting</a><li><a href='PCH 6 BIOS Updates(BIOS更新).html'>PCH 6 BIOS Updates(BIOS更新)</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='變數 Variables.html'>變數 Variables</a><li><a href='條件式Conditional execution.html'>條件式Conditional execution</a></li></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='Exercise3.html'>Exercise3</a></li>
+                     <li><a href='about.html'>about</a><li><a href='成功的PC硬件.html'>成功的PC硬件</a><li class='has-children'><a href='HW1.html'>HW1</a><ul class='dropdown'><li><a href='unit3Hardware Components.html'>unit3Hardware Components</a><li><a href='PCH 6內存模塊（內存模塊）.html'>PCH 6內存模塊（內存模塊）</a><li><a href='PCH 6 History of RAM的歷史記錄.html'>PCH 6 History of RAM的歷史記錄</a><li><a href='PCH 6 Parity(奇偶校驗).html'>PCH 6 Parity(奇偶校驗)</a><li><a href='PCH 6 Installing MemoryModules(安裝內存模塊).html'>PCH 6 Installing MemoryModules(安裝內存模塊)</a><li><a href='PCH 6 CMOS.html'>PCH 6 CMOS</a><li><a href='PCH 6 PowerOn SelfTest (POST) and Error Reporting.html'>PCH 6 PowerOn SelfTest (POST) and Error Reporting</a><li><a href='PCH 6 BIOS Updates(BIOS更新).html'>PCH 6 BIOS Updates(BIOS更新)</a></li></ul><li class='has-children'><a href='HW2.html'>HW2</a><ul class='dropdown'><li><a href='變數 Variables.html'>變數 Variables</a><li><a href='條件式Conditional execution.html'>條件式Conditional execution</a></li></ul><li class='has-children'><a href='HW3.html'>HW3</a><ul class='dropdown'><li><a href='Exercise3.html'>Exercise3</a><li><a href='Exercise 4.html'>Exercise 4</a></li>
                       </ul>
                 </nav>
               </div>
@@ -133,7 +133,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">HW3 << <a href='HW3.html'>Previous</a> <br /><h1>Exercise3</h1>
+    <div id="tipue_search_content">HW3 << <a href='HW3.html'>Previous</a> <a href='Exercise 4.html'>Next</a> >> Exercise 4<br /><h1>Exercise3</h1>
 <p style="text-align: left;">List Less Than Tenlist numbers elements if conditional <img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/>(<span lang="zh-TW">有條件列出數字元素</span>)</p>
 <p>Exercise 3 (and<span> </span><a href="https://www.practicepython.org/solution/2014/02/26/03-list-less-than-ten-solutions.html">Solution</a>)</p>
 <p><span> </span></p>
@@ -224,10 +224,7 @@ my_list = [1，3，“米歇爾”，[5，6，7]]
 <p>What happens if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 50? All the conditions are false, so<span> </span><code class="highlighter-rouge">"F"</code><span> </span>gets printed on the screen. But what if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 95? Then all the conditions are true and everything gets printed, right? Nope! What happens is the program goes line by line. The first condition (grade &gt;= 90) is satisfied, so the program enters into the code inside the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement, executing<span> </span><code class="highlighter-rouge">print("A")</code>. Once code inside a conditional has been executed, the rest of the conditions are skipped and none of the other conditionals are checked.</p>
 <p></p>
 <p><span>更多條件 關於條件的好處是它們遵循邏輯運算。它們也可以用於測試相等性。讓我們舉一個小例子。假設我要編寫一段代碼，將數字等級（1-100）轉換為字母等級（A，B，C，D，F）。代碼如下所示： 成績=輸入（“輸入您的成績：”） 如果成績&gt; = 90： 打印（“ A”） elif等級&gt; = 80： 打印（“ B”） elif等級&gt; = 70： 打印（“ C”） elif等級&gt; = 65： 打印（“ D”） 其他： 打印（“ F”） 如果年級是50，會發生什麼？所有條件都為假，因此“ F”被打印在屏幕上。但是，如果成績是95，該怎麼辦？然後所有條件都成立，一切都打印出來了，對吧？不！程序將逐行執行。滿足第一個條件（等級&gt; = 90），因此程序將在if語句內輸入代碼，並執行print（“ A”）。一旦執行了條件語句中的代碼，將跳過其餘條件，並且不檢查其他條件。</span></p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><br/><br/></span></pre>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"></pre></div></div></li></ul><br />HW3 << <a href='HW3.html'>Previous</a> </div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre><br />HW3 << <a href='HW3.html'>Previous</a> <a href='Exercise 4.html'>Next</a> >> Exercise 4</div>
         
     <!-- footer -->
       <div class="container">
