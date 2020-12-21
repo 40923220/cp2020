@@ -307,10 +307,141 @@ PC健康工具（溫度，電壓等）
 <h1>HW2</h1>
 <h2>變數 Variables</h2>
 <p>參考:<a href="https://books.trinket.io/pfe/02-variables.html">https://books.trinket.io/pfe/02-variables.html</a> </p>
-<p><span>練習 : <a href="https://www.kaggle.com/notebooks?sortBy=dateRun&amp;tab=profile">https://www.kaggle.com/notebooks?sortBy=dateRun&amp;tab=profile</a></span></p>
-<h2><span>條件式Conditional execution<br/></span></h2>
+<p><span>練習 : <a href="https://www.kaggle.com/notebooks?sortBy=dateRun&amp;tab=profile">https://www.kaggle.com/notebooks?sortBy=dateRun&amp;tab=profile</a>\</span></p>
+<p>A<span> </span><em>value</em><span> </span>is one of the basic things a program works with, like a letter or a number. The values we have seen so far are<span> </span><code>1</code>,<span> </span><code>2</code>, and "Hello, World!"</p>
+<p>These values belong to different<span> </span><em>types</em>:<span> </span><code>2</code><span> </span>is an integer, and "Hello, World!" is a<span> </span><em>string</em>, so called because it contains a "string" of letters. You (and the interpreter) can identify strings because they are enclosed in quotation marks.</p>
+<p></p>
+<p>The<span> </span><code>print</code><span> </span>statement also works for integers. We use the<span> </span><code>python</code><span> </span>command to start the interpreter.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">值是程序使用的基本內容之一，例如字母或數字。到目前為止，我們看到的值為1、2和“ Hello，World！”。
+
+這些值屬於不同的類型：2是整數，“ Hello，World！”是字符串，之所以稱為字符串是因為它包含字母的“字符串”。您（和解釋器）可以識別字符串，因為它們用引號引起來。
+
+print語句也適用於整數。我們使用python命令啟動解釋器。<br/></span></pre>
+<pre class="sourceCode python"><code class="sourceCode python">python
+<span style="color: #800080;">&gt;&gt;&gt;</span> <span class="dt" style="color: #008000;">print</span>(<span class="dv">4</span>)
+<span class="dv">4</span></code></pre>
+<p>If you are not sure what type a value has, the interpreter can tell you.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">如果您不確定值的類型，解釋器可以告訴您。<br/><span>One of the most powerful features of a programming language is the ability to manipulate </span><em>variables</em><span>. A variable is a name that refers to a value.</span><br/></span></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span>編程語言最強大的功能之一就是能夠操縱變量。變量是引用值的名稱。<br/></span></code></pre>
+<p>Programmers generally choose names for their variables that are meaningful and document what the variable is used for.</p>
+<p>Variable names can be arbitrarily long. They can contain both letters and numbers, but they cannot start with a number. It is legal to use uppercase letters, but it is a good idea to begin variable names with a lowercase letter (you'll see why later).</p>
+<p>The underscore character (<code>_</code>) can appear in a name. It is often used in names with multiple words, such as<span> </span><code>my_name</code><span> </span>or<span> </span><code>airspeed_of_unladen_swallow</code>. Variable names can start with an underscore character, but we generally avoid doing this unless we are writing library code for others to use.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">程序員通常會為其變量選擇有意義的名稱，並記錄該變量的用途。
+
+變量名可以任意長。它們可以包含字母和數字，但不能以數字開頭。使用大寫字母是合法的，但以小寫字母開頭的變量名是一個好主意（稍後您將看到原因）。<br/></span></pre>
+<p>A<span> </span><em>statement</em><span> </span>is a unit of code that the Python interpreter can execute. We have seen two kinds of statements: print being an expression statement and assignment.</p>
+<p></p>
+<p>When you type a statement in interactive mode, the interpreter executes it and displays the result, if there is one.</p>
+<p>A script usually contains a sequence of statements. If there is more than one statement, the results appear one at a time as the statements execute.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">語句是Python解釋器可以執行的代碼單位。我們已經看到了兩種語句：print是表達式語句和賦值。
+
+在交互模式下鍵入語句時，解釋器將執行該語句並顯示結果（如果有）。
+
+腳本通常包含一系列語句。如果有多個語句，則在執行這些語句時，結果一次出現一個。<br/></span></pre>
+<p><em>Operators</em><span> </span>are special symbols that represent computations like addition and multiplication. The values the operator is applied to are called<span> </span><em>operands</em>.</p>
+<p>The operators<span> </span><code>+</code>,<span> </span><code>-</code>,<span> </span><code>*</code>,<span> </span><code>/</code>, and<span> </span><code>**</code><span> </span>perform addition, subtraction, multiplication, division, and exponentiation,</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">運算符是特殊的符號，代表加法和乘法之類的計算。應用該運算符的值稱為操作數。
+
+運算符+，-，*，/和**執行加，減，乘，除和乘冪運算。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="sourceCode python"><code class="sourceCode python"><span></span><br/></code></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre><h2>條件式Conditional execution</h2>
 <p><span>參考:<a href="https://books.trinket.io/pfe/03-conditional.html">https://books.trinket.io/pfe/03-conditional.html</a><span> </span></span></p>
 <p><span>練習:<a href="https://www.kaggle.com/nfu40923220/cp2020conditional-execution">https://www.kaggle.com/nfu40923220/cp2020conditional-execution</a></span></p>
 <h1>HW3</h1>
+<h2>Exercise3</h2>
+<p style="text-align: left;">List Less Than Tenlist numbers elements if conditional <img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/>(<span lang="zh-TW">有條件列出數字元素</span>)</p>
+<p>Exercise 3 (and<span> </span><a href="https://www.practicepython.org/solution/2014/02/26/03-list-less-than-ten-solutions.html">Solution</a>)</p>
+<p><span> </span></p>
+<p>Take a list, say for example this one:</p>
+<p>a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]<br/>and write a program that prints out all the elements of the list that are less than 5.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">拿一個清單，例如說一個：<br/> a = [1、2、3、5、8、13、21、34、55、89]
+並編寫一個程序，打印出列表中小於5的所有元素。<br/></span></pre>
+<p>Extras:</p>
+<ol>
+<li>Instead of printing the elements one by one, make a new list that has all the elements less than 5 from this list in it and print out this new list.</li>
+<li>Write this in one line of Python.</li>
+<li>Ask the user for a number and return a list that contains only elements from the original list<span> </span><code class="highlighter-rouge">a</code><span> </span>that are smaller than that number given by the user.</li>
+</ol>
+<p><span>附加功能：</span></p>
+<p><span>1.而不是一個一個地打印元素，而是創建一個新列表，其中該列表中的所有元素少於5個，並打印出該新列表。</span></p>
+<p><span>2.</span>用一行Python編寫<span>。</span></p>
+<p><span>3. 向用戶詢問一個數字，然後返回一個列表，該列表僅包含原始列表a中小於用戶給定數字的元素。</span></p>
+<p>Discussion<br/>This week’s topics:</p>
+<p>Lists<br/>More conditionals (if statements)</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">討論區
+本週主題：
+
+清單
+更多條件（如果語句）<br/> <br/>Lists</span></pre>
+<p>This week’s exercise hits on a topic critical for all types and styles of programming:<span> </span><strong>lists</strong>. Lists are basically an ordered way of grouping things (called<span> </span><strong>elements</strong>) - the cool thing about lists in Python is that you can have a list that contains objects of multiple types. Your list can mix between strings, integers, objects, other lists, what have you.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><br/><br/>清單
+本週的練習涉及一個對所有類型和風格的編程都至關重要的主題：列表。列表基本上是一種將事物（稱為元素）進行分組的有序方式-Python中列表的最酷的功能是您可以擁有一個包含多種類型對象的列表。<br/>您的列表可以混合在字符串，整數，對象，其他列表之間，包括您所擁有的。<br/><br/></span></pre>
+<p>The way to construct an empty list is just to do</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span></code></pre>
+</figure>
+<p>And your variable<span> </span><code class="highlighter-rouge">x</code><span> </span>now holds an empty list. To add things to this list, just “append” them to the list. Like so:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">x</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span></code></pre>
+</figure>
+<p>Your list<span> </span><code class="highlighter-rouge">x</code><span> </span>now looks like<span> </span><code class="highlighter-rouge">[3]</code>.</p>
+<p>In Python, lists are also<span> </span><strong>iterables</strong>, which means you can loop through them with a<span> </span><strong>for loop</strong><span> </span>in a convenient way. (If you come from other languages like C++ or Java you are most likely used to using a counter to loop through indices of a list - in Python you can actually loop through the elements.) I will let the code speak for itself:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="s">"Michele"</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]]</span>
+<span class="k">for</span> <span class="n">element</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">element</span><span class="p">)</span></code></pre>
+</figure>
+<p>Will yield the result:</p>
+<figure class="highlight">
+<pre><code class="language-pycon" data-lang="pycon">1 
+3
+"Michele"
+[5, 6, 7]</code></pre>
+</figure>
+<p>There are many other properties of lists, but for the basic exercise all you should need is this for loop property. Future weeks will address other properties of lists.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">構造一個空列表的方法就是
+
+x = []
+現在，變量x包含一個空列表。要將內容添加到此列表中，只需將它們“添加”到列表中即可。像這樣：
+
+x = []
+x.append（3）
+您的列表x現在看起來像[3]。
+
+在Python中，列表也是可迭代的，這意味著您可以方便地使用for循環遍歷它們。 （如果您來自其他語言，例如C ++或Java，則最有可能習慣於使用計數器循環遍歷列表的索引-在Python中，您實際上可以循環遍曆元素。）我將讓代碼說明自己：
+
+my_list = [1，3，“米歇爾”，[5，6，7]]
+對於my_list中的元素：
+  打印（元素）
+將產生結果：
+
+1個
+3
+“米歇爾”
+[5，6，7]
+列表還有許多其他屬性，但是對於基本練習而言，您只需要此for循環屬性。未來幾週將處理列表的其他屬性。<br/><br/></span></pre>
+<h2>More Conditionals</h2>
+<p>The nice thing about conditionals is that they follow logical operations. They can also be used to test equality. Let’s do a small example. Let’s say I want to make a piece of code that converts from a numerical grade (1-100) to a letter grade (A, B, C, D, F). The code would look like this:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python"><span class="n">grade</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your grade: "</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"A"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"B"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"C"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">grade</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"D"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="s">"F"</span><span class="p">)</span></code></pre>
+</figure>
+<p>What happens if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 50? All the conditions are false, so<span> </span><code class="highlighter-rouge">"F"</code><span> </span>gets printed on the screen. But what if<span> </span><code class="highlighter-rouge">grade</code><span> </span>is 95? Then all the conditions are true and everything gets printed, right? Nope! What happens is the program goes line by line. The first condition (grade &gt;= 90) is satisfied, so the program enters into the code inside the<span> </span><code class="highlighter-rouge">if</code><span> </span>statement, executing<span> </span><code class="highlighter-rouge">print("A")</code>. Once code inside a conditional has been executed, the rest of the conditions are skipped and none of the other conditionals are checked.</p>
 <p></p>
+<p><span>更多條件 關於條件的好處是它們遵循邏輯運算。它們也可以用於測試相等性。讓我們舉一個小例子。假設我要編寫一段代碼，將數字等級（1-100）轉換為字母等級（A，B，C，D，F）。代碼如下所示： 成績=輸入（“輸入您的成績：”） 如果成績&gt; = 90： 打印（“ A”） elif等級&gt; = 80： 打印（“ B”） elif等級&gt; = 70： 打印（“ C”） elif等級&gt; = 65： 打印（“ D”） 其他： 打印（“ F”） 如果年級是50，會發生什麼？所有條件都為假，因此“ F”被打印在屏幕上。但是，如果成績是95，該怎麼辦？然後所有條件都成立，一切都打印出來了，對吧？不！程序將逐行執行。滿足第一個條件（等級&gt; = 90），因此程序將在if語句內輸入代碼，並執行print（“ A”）。一旦執行了條件語句中的代碼，將跳過其餘條件，並且不檢查其他條件。</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><br/><br/></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"></pre></div></div></li></ul>
