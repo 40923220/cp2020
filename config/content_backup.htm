@@ -444,12 +444,38 @@ my_list = [1，3，“米歇爾”，[5，6，7]]
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre><h2>Exercise 4</h2>
 <p><span lang="zh-TW"><span>Divisors </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/>(除數)</span></p>
 <p><span lang="zh-TW">Exercise 4 (and Solution)<br/>Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (If you don’t know what a divisor is, it is a number that divides evenly into another number. For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)</span></p>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">創建一個程序，詢問用戶一個數字，然後打印出該數字的所有除數的列表。 <br/>（如果您不知道除數是多少，該數字將被除以另一個數。例如，13是26的除數，因為26/13沒有餘數。）<br/><br/>Discussion<br/>The topics that you need for this exercise combine lists, conditionals, and user input. There is a new concept of creating lists.<br/><br/>There is an easy way to programmatically create lists of numbers in Python.<br/></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">創建一個程序，詢問用戶一個數字，然後打印出該數字的所有除數的列表。 <br/>（如果您不知道除數是多少，該數字將被除以另一個數。例如，13是26的除數，因為26/13沒有餘數。）</span></pre>
+<p></p>
+<p>The topics that you need for this exercise combine lists, conditionals, and user input. There is a new concept of creating lists.</p>
+<p>There is an easy way to programmatically create lists of numbers in Python.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">討論區
 本練習需要的主題包括列表，條件和用戶輸入。有一個創建列表的新概念。
 
-有一種簡便的方法可以在Python中以編程方式創建數字列表。<br/><br/>To create a list of numbers from 2 to 10, just use the following code:<br/><br/> x = range(2, 11)<br/>Then the variable x will contain the list [2, 3, 4, 5, 6, 7, 8, 9, 10]. Note that the second number in the range() function is not included in the original list.<br/><br/>Now that x is a list of numbers, the same for loop can be used with the list:<br/><br/> for elem in x: <br/> print elem<br/>Will yield the result:<br/><br/> 2<br/> 3<br/> 4<br/> 5<br/> 6<br/> 7<br/> 8<br/> 9<br/></span>10<br/><br/></pre>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">要創建2到10的數字列表，只需使用以下代碼：
+有一種簡便的方法可以在Python中以編程方式創建數字列表。<br/></span></pre>
+<p>To create a list of numbers from 2 to 10, just use the following code:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">x</span> <span class="o">=</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">)</span></code></pre>
+</figure>
+<p>Then the variable<span> </span><code class="highlighter-rouge">x</code><span> </span>will contain the list<span> </span><code class="highlighter-rouge">[2, 3, 4, 5, 6, 7, 8, 9, 10]</code>. Note that the second number in the<span> </span><code class="highlighter-rouge">range()</code><span> </span>function is not included in the original list.</p>
+<p>Now that<span> </span><code class="highlighter-rouge">x</code><span> </span>is a list of numbers, the same for loop can be used with the list:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span> 
+    <span class="k">print</span> <span class="n">elem</span></code></pre>
+</figure>
+<p>Will yield the result:</p>
+<figure class="highlight">
+<pre><code class="language-pycon" data-lang="pycon">  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+  10</code></pre>
+</figure>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><br/></span><span lang="zh-TW">要創建2到10的數字列表，只需使用以下代碼：
 
   x =範圍（2，11）
 然後，變量x將包含列表[2、3、4、5、6、7、8、9、10]。請注意，range（）函數中的第二個數字未包含在原始列表中。

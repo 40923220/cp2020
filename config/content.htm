@@ -480,7 +480,127 @@ my_list = [1，3，“米歇爾”，[5，6，7]]
   x =範圍（2，11）
 然後，變量x將包含列表[2、3、4、5、6、7、8、9、10]。請注意，range（）函數中的第二個數字未包含在原始列表中。
 
-既然x是一個數字列表，則該列表可以使用相同的for</span></pre>
+既然x是一個數字列表，則該列表可以使用相同的for<br/></span></pre>
+<br/>Exercise 8 (and<span> </span><a href="https://www.practicepython.org/solution/2014/04/02/08-rock-paper-scissors-solutions.html">Solution</a>)
+<p><span>Rock Paper Scissors </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/>(<span>剪刀石頭布</span>)</p>
+<p>Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using input), compare them, print out a message of congratulations to the winner, and ask if the players want to start a new game)</p>
+<p>Remember the rules:</p>
+<p> Rock beats scissors<br/>  Scissors beats paper<br/>   Paper beats rock</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">製作兩人石頭剪刀布遊戲。 <br/>（提示：要求玩家玩（使用輸入），進行比較，打印出對獲勝者的祝賀信息，並詢問玩家是否要開始新遊戲）
+
+記住規則：
+
+搖滾剪刀
+剪刀打紙
+紙打石頭<br/><br/>Discussion<br/></span></pre>
+<p>Concepts for this week:         <span lang="zh-TW">討論區 本週的概念:</span></p>
+<ul>
+<li>While loops                 While循環</li>
+<li>Infinite loops                無限循環</li>
+<li>Break statements          中斷聲明</li>
+</ul>
+<p>While loops</p>
+<p>We have already discussed<span> </span><code class="highlighter-rouge">for</code><span> </span>loops, or loops that look sequentially (one by one) at elements in a list. There is a second type of loop that works in a slightly different way called a<span> </span><code class="highlighter-rouge">while</code><span> </span>loop.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">While循環
+我們已經討論過for循環，或循環（逐個看）列表中元素的循環。還有另一種類型的循環，其工作方式稍有不同，稱為while循環。</span></pre>
+<p>The idea is simple: while a certain condition is<span> </span><code class="highlighter-rouge">True</code>, keep doing something. For example:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+    <span class="n">a</span> <span class="o">-=</span> <span class="mi">1</span></code></pre>
+</figure>
+<p>The output of this code segment is:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="mi">5</span>
+  <span class="mi">4</span>
+  <span class="mi">3</span>
+  <span class="mi">2</span>
+  <span class="mi">1</span></code></pre>
+</figure>
+<p>A particularly useful way to use<span> </span><code class="highlighter-rouge">while</code><span> </span>loops is checking user input for correctness. For example:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">quit</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Type "enter" to quit:'</span> <span class="p">)</span>
+  <span class="k">while</span> <span class="n">quit</span> <span class="o">!=</span> <span class="s">"enter"</span><span class="p">:</span>
+    <span class="n">quit</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">'Type "enter" to quit:'</span> <span class="p">)</span></code></pre>
+</figure>
+<p>The uses for this are infinite, and can (and should!) be combined with conditionals to yield the most efficient results.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">這個想法很簡單：當某個條件為True時，繼續做某事。例如：
+
+  a = 5
+  而（a&gt; 0）：
+    打印（a）
+    -= 1
+該代碼段的輸出為：
+
+  5
+  4
+  3
+  2
+  1個
+使用while循環的一種特別有用的方法是檢查用戶輸入的正確性。例如：
+
+  quit = input（“輸入“ enter”以退出：'）
+  而退出！=“輸入”：
+    quit = input（“輸入“ enter”以退出：'）
+此方法的用途是無限的，並且可以（並且應該！）與條件條件結合使用以產生最有效的結果。<br/><br/></span></pre>
+<h3 id="infinite-loops">Infinite loops</h3>
+<p>An infinite loop is a loop that never stops. This means that the condition in the beginning of the while loop will always be true.</p>
+<p>For example:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="n">i</span> <span class="o">=</span> <span class="mi">5</span>
+  <span class="k">while</span> <span class="n">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="s">"Inside the loop"</span><span class="p">)</span></code></pre>
+</figure>
+<p>What will happen is the loop will print out the phrase “Inside the loop” forever and ever. If you are running your computer, you will have to “kill the program” to stop it. Each operating system has a different way of “killing a program” to get out of an infinite loop.</p>
+<p>On Linux: in the terminal, type “CTRL-C” to kill the program that is currently running in the terminal. If you are using the IDLE Python IDE, then you must press “CTRL-D” to exit your running program. When in doubt, do a Google search before you start programming!</p>
+<p>On Windows: type “CTRL-ALT-DEL” and open the task manager to kill the program.</p>
+<p>On Mac: right-click on the task, and kill the program that is running forever.</p>
+<p>If you find yourself in an infinite loop, your program will never end.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">無限循環
+無限循環是永不停止的循環。這意味著while循環開始時的條件將始終為true。
+
+例如：
+
+  我= 5
+  當我&gt; 0時：
+    print（“循環內”）
+將會發生的是，循環將永遠打印出短語“ Inside the loop”。如果您正在運行計算機，則必須“殺死該程序”以將其停止。每個操作系統都有不同的“殺死程序”以擺脫無限循環的方式。
+
+在Linux上：在終端中，鍵入“ CTRL-C”以終止終端中當前正在運行的程序。如果使用的是IDLE Python IDE，則必須按“ CTRL-D”退出正在運行的程序。如有疑問，請在開始編程之前進行Google搜索！
+
+在Windows上：鍵入“ CTRL-ALT-DEL”並打開任務管理器以終止程序。
+
+在Mac上：右鍵單擊該任務，然後終止永久運行的程序。
+
+如果發現自己陷入無限循環，則程序將永遠不會結束。<br/></span></pre>
+<h3 id="break-statements">Break statements</h3>
+<p>A<span> </span><code class="highlighter-rouge">break</code><span> </span>statement stops the execution of a loop before the original condition is met. While the use of a<span> </span><code class="highlighter-rouge">break</code><span> </span>statement will often start an argument about good coding practices, sometimes it is useful.</p>
+<p>For example:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="k">while</span> <span class="bp">True</span><span class="p">:</span> 
+    <span class="n">usr_command</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your command: "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">usr_command</span> <span class="o">==</span> <span class="s">"quit"</span><span class="p">:</span>
+      <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span> 
+      <span class="k">print</span><span class="p">(</span><span class="s">"You typed "</span> <span class="o">+</span> <span class="n">usr_command</span><span class="p">)</span></code></pre>
+</figure>
+<p>In this case, the<span> </span><code class="highlighter-rouge">break</code><span> </span>statement is used to break off the “infinite while loop” that we have constructed with the<span> </span><code class="highlighter-rouge">while True</code><span> </span>statement.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">中斷聲明
+break語句在滿足原始條件之前停止執行循環。儘管使用break語句通常會引發有關良好編碼實踐的爭論，但有時它很有用。
+
+例如：
+
+  而True：
+    usr_command = input（“輸入您的命令：”）
+    如果usr_command ==“ quit”：
+      打破
+    其他：
+      print（“您輸入了” + usr_command）
+在這種情況下，break語句用於中斷我們使用while True語句構建的“ while循環無限”。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
 <p><span lang="zh-TW"></span></p>
 <p><span lang="zh-TW"></span></p>

@@ -133,69 +133,38 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">PCH 6 CMOS << <a href='PCH 6 CMOS.html'>Previous</a> <a href='PCH 6 BIOS Updates(BIOS更新).html'>Next</a> >> PCH 6 BIOS Updates(BIOS更新)<br /><h1>PCH 6 PowerOn SelfTest (POST) and Error Reporting</h1>
-<p><span lang="zh-TW"><span>PCH 6開機自檢（POST）和錯誤報告</span></span></p>
-<p id="N106A0" lang="">When power is turned on, the POST (power-on self-test) is the diagnostic testing sequence that a computer's basic input/output system (or "starting program") runs to determine if the computer keyboard, random access memory, disk drives, and other hardware are working correctly. The POST is the initial test performed by the BIOS upon booting. The role of the POST is to find errors in hardware, and report those errors. The POST checks the following:</p>
-<ul lang="">
-<li lang="">CPU and parts of BIOS</li>
-<li lang="">System time</li>
-<li lang="">Video display card</li>
-<li lang="">Memory</li>
-<li lang="">Keyboard</li>
-<li lang="">Disk drives</li>
-</ul>
-<p id="N106B8" lang="">If the necessary hardware is detected and found to be operating properly, the computer begins to boot. If the hardware is not detected or is found not to be operating properly, the BIOS issues an error message. This error message may be text on the display screen and/or a series of coded beeps, depending on the nature of the problem. Since the POST runs before the computer's video card is activated, it may not be possible to progress to the display screen. The pattern of beeps may be a variable number of short beeps or a mixture of long and short beeps, depending on what type of BIOS is installed. The pattern of beeps contains messages about the nature of the problem detected. For example, if the keyboard is not detected, a particular pattern of beeps will inform you of that fact. An error found in the POST is usually fatal (that is, it causes the current program to stop running) and will halt the boot process, since the hardware checked is absolutely essential for the computer's functions.</p>
-<p lang="">The pattern of beeps is like Morse code. The number and sequence of beeps has a meaning set by the computer manufacturer. Therefore, the meaning of each beep differs by manufacturer. A chart that includes some AMI and Dell beep codes is shown below.</p>
-<table align="center" cellspacing="0" class="wbtable" lang="">
-<thead>
-<tr>
-<th align="center" lang=""><em lang="">BEEP CODE</em></th>
-<th align="center" lang=""><em lang="">AMI</em></th>
-<th align="center" lang=""><em lang="">DELL</em></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center" lang="">1</td>
-<td lang="">DRAM refresh failure</td>
-<td lang="">BIOS ROM corruption or failure</td>
-</tr>
-<tr class="e">
-<td align="center" lang="">2</td>
-<td lang="">Parity circuit failure</td>
-<td lang="">RAM not detected</td>
-</tr>
-<tr>
-<td align="center" lang="">3</td>
-<td lang="">Base 64K RAM failure</td>
-<td lang="">Motherboard failure</td>
-</tr>
-<tr class="e">
-<td align="center" lang="">4</td>
-<td lang="">System timer failure</td>
-<td lang="">RAM failure</td>
-</tr>
-<tr>
-<td align="center" lang="">5</td>
-<td lang="">Process failure</td>
-<td lang="">CMOS battery failure</td>
-</tr>
-</tbody>
-</table>
-<p></p>
-<p>Beep Codes</p>
-<div>
-<p id="N1071E" lang="">Here is a sample beep code from a computer having a problem:</p>
-<div class="actContain">
-<div class="activity audio"><span class="audio" rcolor=""><audio controls="controls" data-mce-fragment="1" id="_i_0" src="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH06/webcontent/PCH06/beep_code2.mp3" type="audio/mpeg"></audio></span></div>
-</div>
-<p id="N10727" lang="">This beep code consists of two short beeps. What does this POST beep sequence mean? It depends on the BIOS’s manufacturer.</p>
-<p id="N1072A" lang="">Use a search engine to search for "AMI beep codes."<span> </span><a href="http://www.bioscentral.com/beepcodes/amibeep.htm" id="_i_1" lang="" target="_blank">This might be a typical result.</a><span> </span>This website tells us that on an AMI computer, two short beeps indicate a memory parity error.</p>
-<p id="N10733" lang="">Now search for "AST Research BIOS beep codes."<span> </span><a href="http://www.bioscentral.com/beepcodes/astbeep.htm" id="_i_2" lang="" target="_blank">Here is a typical result.</a><span> </span>This website tells us that on an AST Research BIOS computer, two short beeps indicate a keyboard controller buffer failure.</p>
-<p id="N1073C" lang="">An Internet search for "IBM bios beep codes" would indicate that this beep code indicates a POST error, and that you should review the screen for the error code.</p>
-<p id="N1073F" lang="">Knowing the BIOS manufacturer is important when diagnosing a problem during the POST, as the meaning of the beep codes vary by manufacturer.</p>
-<span lang="zh-TW">開機時，POST（開機自檢）是計算機基本輸入/輸出系統（或“啟動程序”）運行以確定計算機鍵盤，隨機存取存儲器，磁盤驅動器的診斷測試順序。 ，並且其他硬件運行正常。 POST是BIOS在引導時執行的初始測試。 POST的作用是查找硬件錯誤，並報告這些錯誤。 POST檢查以下內容： CPU和部分BIOS 系統時間 視頻顯示卡 記憶 鍵盤 磁盤驅動器 如果檢測到必要的硬件並發現其運行正常，則計算機將開始啟動。如果未檢測到硬件或發現硬件運行不正常，BIOS將發出錯誤消息。根據問題的性質，此錯誤消息可能是顯示屏上的文本和/或一系列編碼的嗶聲。由於POST在激活計算機的視頻卡之前運行，因此可能無法進入顯示屏幕。嗶聲的模式可以是可變數目的短嗶聲，也可以是長短嗶聲的混合，具體取決於安裝的BIOS類型。嗶聲的模式包含有關所檢測問題性質的消息。例如，如果未檢測到鍵盤，則特定的嗶嗶聲將告知您該事實。 POST中發現的錯誤通常是致命的（也就是說，它導致當前程序停止運行），並且將終止引導過程，因為檢查的硬件對於計算機的功能絕對必要。 嗶聲的模式類似於莫爾斯電碼。嗶聲的數量和順序由計算機製造商設定。因此，每個嗶嗶聲的含義因製造商而異。包含一些AMI和Dell嗶聲代碼的圖表如下所示。<br/><span>此蜂鳴聲代碼包含兩個短蜂鳴聲。這個POST嗶嗶聲序列是什麼意思？這取決於BIOS的製造商。 使用搜索引擎搜索“ AMI嗶聲代碼”。這可能是典型的結果。該網站告訴我們，在AMI計算機上，兩聲短促的嗶嗶聲表示內存奇偶校驗錯誤。 現在搜索“ AST Research BIOS嗶聲代碼”。這是一個典型的結果。該網站告訴我們，在AST Research BIOS計算機上，兩聲短促的嗶嗶聲表示鍵盤控制器緩衝區故障。 如果在Internet上搜索“ IBM bios嗶聲代碼”，則表明該嗶聲代碼指示POST錯誤，因此您應該在屏幕上查看錯誤代碼。 在POST期間診斷問題時，了解BIOS製造商很重要，因為嗶嗶代碼的含義因製造商而異。<br/><br/><br/><br/></span></span>
-<br />PCH 6 CMOS << <a href='PCH 6 CMOS.html'>Previous</a> <a href='PCH 6 BIOS Updates(BIOS更新).html'>Next</a> >> PCH 6 BIOS Updates(BIOS更新)</div>
+    <div id="tipue_search_content">Infinite loops << <a href='Infinite loops.html'>Previous</a> <br /><h1>Break statements</h1>
+<p>A<span> </span><code class="highlighter-rouge">break</code><span> </span>statement stops the execution of a loop before the original condition is met. While the use of a<span> </span><code class="highlighter-rouge">break</code><span> </span>statement will often start an argument about good coding practices, sometimes it is useful.</p>
+<p>For example:</p>
+<figure class="highlight">
+<pre><code class="language-python" data-lang="python">  <span class="k">while</span> <span class="bp">True</span><span class="p">:</span> 
+    <span class="n">usr_command</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s">"Enter your command: "</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">usr_command</span> <span class="o">==</span> <span class="s">"quit"</span><span class="p">:</span>
+      <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span> 
+      <span class="k">print</span><span class="p">(</span><span class="s">"You typed "</span> <span class="o">+</span> <span class="n">usr_command</span><span class="p">)</span></code></pre>
+</figure>
+<p>In this case, the<span> </span><code class="highlighter-rouge">break</code><span> </span>statement is used to break off the “infinite while loop” that we have constructed with the<span> </span><code class="highlighter-rouge">while True</code><span> </span>statement.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">中斷聲明
+break語句在滿足原始條件之前停止執行循環。儘管使用break語句通常會引發有關良好編碼實踐的爭論，但有時它很有用。
+
+例如：
+
+  而True：
+    usr_command = input（“輸入您的命令：”）
+    如果usr_command ==“ quit”：
+      打破
+    其他：
+      print（“您輸入了” + usr_command）
+在這種情況下，break語句用於中斷我們使用while True語句構建的“ while循環無限”。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"> </span></pre>
+<p><span lang="zh-TW"></span></p>
+<p><span lang="zh-TW"></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"></pre></div></div></li></ul><br />Infinite loops << <a href='Infinite loops.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
